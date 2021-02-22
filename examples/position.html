@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position: absolute</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #b2bec3;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.el {
+    width: 200px; 
+    height: 200px; 
+    line-height: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.first {
+    background-color: #6c5ce7;
+    position: absolute;
+    right: 0;
+}
+
+.second {
+    background-color: #00b894;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.last {
+    position: relative;
+    background-color: #d63031;
+}
+
+.internal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #00cec9;
+}
+</style>
+    </head>
+    <body>
+        <div class="el first">
+            This is a div
+        </div>
+        <div class="el second">
+            This is a div
+        </div>
+        <div class="el last">
+            <div class="el internal">
+               Internal 
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+:root {
+    /* back1 = #f5f5f5
+     * back2 = #2c3e50;
+     * l1 = #2980b9;
+     * back3: #111e2b;
+     * lettercol3: #ecf0f1;
+     */
+    --back: #fff;
+    --lettercol: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width:  100%;
+    background-color: var(--back); 
+}
+
+.navlinks {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navlinks li {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: var(--lettercol); 
+    font-size: 1.2rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+    transition: border-bottom .5s;
+}
+
+.navlinks li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: var(--lettercol); 
+}
+
+.center h1 {
+    font-size: 50px; 
+}
+
+.center .social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.center .social a {
+    color: var(--letter-col); 
+}
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    color: var(--lettercol);
+    font-size: 15px;
+}

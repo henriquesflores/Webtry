@@ -2,82 +2,44 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="./resources/css/index.css", type="text/css" rel="stylesheet">
+        <script module="" 
+             src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+
         <title>Henrique Flores's website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Lato", sans-serif;
-        }
-
-        html {
-            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./resources/img/background5.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-
-        h1 {
-            font-weight: 300;
-            font-size: 50px;
-            color: #fff;
-            position:relative;
-            margin-top: 75vh;
-            margin-left: 30px;
-            letter-spacing: 3px;
-        }
-
-        nav {
-            display: block;
-            margin-top: 5vh;
-            margin-left: 60vh;
-        }
-
-        nav li {
-            display: inline-block;
-            letter-spacing: 2px;
-            list-style: none;
-            margin-left: 40px;
-        }
-
-        nav li a:link,
-        nav li a:visited {
-            padding-bottom: 5px;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.2s;
-            color: #fff;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        nav li a:hover,
-        nav li a:active {
-            padding-bottom: 5px;
-            border-bottom: 2px solid #fff;
-            transition: border-bottom 0.2s;
-            color: #fff;
-            font-size: 20px;
-            text-decoration: none;
-        }
-    </style>
     </head>
 
     <body>
-        <header>
-        <nav>
-        <ul>
-            <li><a href="#">Machine Learning</a>
-            <li><a href="#">Probability and Statistics</a>
-            <li><a href="#">Physics</a>
-            <li><a href="#">Blog</a>
-            <li><a href="#">About</a>
+        <ul class="navlinks">
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Probability and Statistics</a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-        </nav>
 
-        <h1>Henrique Flores</h1>
-        </header>
+        <div class="center">
+            <h1>Henrique Flores</h1>
+            <ul class="social">
+                <li><a class="linkedin" href="#">
+                   <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+                <li><a class="twitter" href="#">
+                   <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+                <li><a class="github" href="#">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a></li>
+            </ul>
+         </div>
+
+
+        <footer>
+            Copyright Henrique Flores 2021.
+       </footer>
+
     </body>
 </html>
