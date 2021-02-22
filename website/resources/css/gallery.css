@@ -1,0 +1,94 @@
+:root {
+    /* back1 = #f5f5f5
+     * back2 = #2c3e50;
+     * l1 = #2980b9;
+     * back3: #111e2b;
+     * lettercol3: #ecf0f1;
+     */
+    --back: #fff;
+    --lettercol: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width:  100%;
+    background-color: var(--back); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding-top: 1rem;
+}
+
+h1 {
+    flex: 2;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.navlinks {
+    flex: 1;
+    display: flex;
+    list-style: none;
+}
+
+.navlinks li {
+    margin-right: 1rem;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom 0.5s;
+}
+
+.navlinks li:hover {
+    border-bottom: 1px solid var(--lettercol);
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: var(--lettercol);
+    font-size: 1rem;
+}
+
+.posts-list {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.posts {
+    list-style: none;
+    margin: 5rem 0;
+}
+
+.posts a {
+    text-decoration: none;
+    color: var(--lettercol);
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-bottom: 2px solid var(--lettercol);
+    padding-bottom: 5px;
+}
+
+.posts p {
+    margin: 2rem 0;
+    text-align: left;
+    text-indent: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1%;
+    padding-left:  1%;
+}
